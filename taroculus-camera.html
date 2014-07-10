@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv='X-UA-Compatible' content='chrome=1' />
+  <title>Augmented Reality</title>
+	<style>
+  div.select {
+    margin: 0 0 1em 0;
+  }
+  label {
+    color: white;
+  }
+  </style>
+  <script type="text/javascript" src="libs/Three.js"></script>
+  <script type="text/javascript" src="taroculus.js"></script>
+
+</head>
+
+<body style="text-align: center; font-family: monospace;">
+  <div class='select'>
+    <label for='videoSource'>Video source: </label><select id='videoSource'></select>
+  </div>
+
+
+  <video id="video" width=320 height=240 autoplay="true" style="display:none;"></video>
+ 
+  <div style="width: 100%;">
+    <div style="width: 650px; margin-left:auto; margin-right:auto;">
+      <div id="container" style="width: 320px; height: 240px; float: left; border: solid 1px black; background: green;"></div>
+      <div id="container2" style="width: 320px; height: 240px; float: left; border: solid 1px black; background: red;"></div>
+      <div style="clear: both;"></div>
+
+</body>
+ 
+</html>
